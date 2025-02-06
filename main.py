@@ -38,6 +38,10 @@ def countNumberOfRegistrations(registy):
 
     return len(registy)
 
+def getVehicleID(registry, registrationNumber):
+
+    return registry[registrationNumber]["vehicleID"]
+
 if __name__ == "__main__":
 
     vehicleRegistry = {}
@@ -50,4 +54,5 @@ if __name__ == "__main__":
 
     print(vehicleRegistry)
     print(countNumberOfRegistrations(vehicleRegistry))
+    print(getVehicleID(vehicleRegistry, "AB01 CDE"))
     
