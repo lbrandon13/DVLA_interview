@@ -38,7 +38,11 @@ if __name__ == "__main__":
 
     vehicleRegistry = {}
 
-    addNewRegistration(vehicleRegistry, "1234", "2021")
-    addIDToRegistration(vehicleRegistry, "1234", "9876")
+    addNewRegistration(vehicleRegistry, "AB01 CDE", "2001")
+    addIDToRegistration(vehicleRegistry, "AB01 CDE", "12345")
+    addNewRegistration(vehicleRegistry, "FG02 HJK", "2002")
+    addIDToRegistration(vehicleRegistry, "FG02 HJK", "67890")
+    addNewRegistration(vehicleRegistry, "L33T H4X0R", "2022")
+    
     print(vehicleRegistry)
     
