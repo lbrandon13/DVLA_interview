@@ -30,10 +30,15 @@ def addNewRegistration(registry, registrationNumber):
 
     registry[registrationNumber] = {}
 
+def addIDToRegistration(registry, registrationNumber, vehicleID):
+
+    registry[registrationNumber]['vehicleID'] = vehicleID
 
 if __name__ == "__main__":
 
     vehicleRegistry = {}
 
     addNewRegistration(vehicleRegistry, "1234")
+    addIDToRegistration(vehicleRegistry, "1234", "9876")
     print(vehicleRegistry)
+    
