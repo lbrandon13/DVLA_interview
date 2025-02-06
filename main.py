@@ -26,9 +26,9 @@
 # feature 1 then can just return the length of the dictionary
 # feature 2 then can use the registration number to find an appropriate inner 
 
-def addNewRegistration(registry, registrationNumber):
+def addNewRegistration(registry, registrationNumber, year):
 
-    registry[registrationNumber] = {}
+    registry[registrationNumber] = {"year" : year}
 
 def addIDToRegistration(registry, registrationNumber, vehicleID):
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     vehicleRegistry = {}
 
-    addNewRegistration(vehicleRegistry, "1234")
+    addNewRegistration(vehicleRegistry, "1234", "2021")
     addIDToRegistration(vehicleRegistry, "1234", "9876")
     print(vehicleRegistry)
     
