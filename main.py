@@ -34,6 +34,10 @@ def addIDToRegistration(registry, registrationNumber, vehicleID):
 
     registry[registrationNumber]['vehicleID'] = vehicleID
 
+def countNumberOfRegistrations(registy):
+
+    return len(registy)
+
 if __name__ == "__main__":
 
     vehicleRegistry = {}
@@ -43,6 +47,7 @@ if __name__ == "__main__":
     addNewRegistration(vehicleRegistry, "FG02 HJK", "2002")
     addIDToRegistration(vehicleRegistry, "FG02 HJK", "67890")
     addNewRegistration(vehicleRegistry, "L33T H4X0R", "2022")
-    
+
     print(vehicleRegistry)
+    print(countNumberOfRegistrations(vehicleRegistry))
     
