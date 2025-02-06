@@ -24,7 +24,7 @@ class TestRegistration(unittest.TestCase):
 
     def testAddRegistrationWithYear(self):
 
-        exampleDict = {"1234" : {"year"}}
+        exampleDict = {"1234" : {"year" : "2021"}}
         testDict = {}
 
         addNewRegistration(testDict, "1234", "2021")
