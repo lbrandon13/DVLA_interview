@@ -18,7 +18,7 @@ class TestRegistration(unittest.TestCase):
         exampleDict = {"1234" : {"vehicleID" : "9876"}}
         testDict = {"1234" : {}}
 
-        addIDToRegistration(testDict, "9876")
+        addIDToRegistration(testDict, "1234", "9876")
 
         self.assertDictEqual(exampleDict, testDict)
 
