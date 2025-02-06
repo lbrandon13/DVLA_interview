@@ -26,14 +26,14 @@
 # feature 1 then can just return the length of the dictionary
 # feature 2 then can use the registration number to find an appropriate inner 
 
-vehicleRegistry = {}
-
 def addNewRegistration(registry, registrationNumber):
 
     registry[registrationNumber] = {}
 
 
 if __name__ == "__main__":
+
+    vehicleRegistry = {}
 
     addNewRegistration(vehicleRegistry, "1234")
     print(vehicleRegistry)
