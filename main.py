@@ -12,3 +12,16 @@
 # Feature 2:
 
 # Return the vehicle ID for a given registration number.
+
+
+# Plan:
+#
+# create a dictionary to link a registration number to an inner dictionary
+# the inner dictionary contains the year and optionally the vehicle id (does the vehicle ID always exist and link to an empty string, or does it only exist as a key once added?)
+#
+# to implement the base feature we need 2 functions, 
+#     1 to create a registration and add a year (and optional argument to add vehicle id), 
+#     the second to add a vehicle id to said registration
+#
+# feature 1 then can just return the length of the dictionary
+# feature 2 then can use the registration number to find an appropriate inner 
