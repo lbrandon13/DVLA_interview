@@ -30,7 +30,7 @@ vehicleRegistry = {}
 
 def addNewRegistration(registry, registrationNumber):
 
-    vehicleRegistry[registrationNumber] = {}
+    registry[registrationNumber] = {}
 
 
 if __name__ == "__main__":
