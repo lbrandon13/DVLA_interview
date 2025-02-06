@@ -1,6 +1,6 @@
 import unittest
 
-from main import addNewRegistration, addIDToRegistration
+from main import addNewRegistration, addIDToRegistration, countNumberOfRegistrations
 
 class TestRegistration(unittest.TestCase):
 
@@ -21,6 +21,12 @@ class TestRegistration(unittest.TestCase):
         addNewRegistration(testDict, "1234", "2021")
 
         self.assertDictEqual(exampleDict, testDict)
+
+    def testCountRegistrations(self):
+
+        exampleDict = {'AB01 CDE': {'year': '2001', 'vehicleID': '12345'}, 'FG02 HJK': {'year': '2002', 'vehicleID': '67890'}, 'L33T H4X0R': {'year': '2022'}}
+
+        self.assertEqual(3, countNumberOfRegistrations(exampleDict))
 
 if __name__ == "__main__":
     unittest.main()
