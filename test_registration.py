@@ -38,7 +38,7 @@ class TestRegistration(unittest.TestCase):
 
         exampleDict = {}
 
-        self.assertRaises(Exception, addIDToRegistration(exampleDict, "1234", "9876"))
+        self.assertRaises(Exception, addIDToRegistration, exampleDict, "1234", "9876")
 
 if __name__ == "__main__":
     unittest.main()
