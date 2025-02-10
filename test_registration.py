@@ -34,6 +34,12 @@ class TestRegistration(unittest.TestCase):
 
         self.assertEqual("9876", getVehicleID(exampleDict, "1234"))
 
+    def testAddToMissingRegistration(self):
+
+        exampleDict = {}
+
+        self.assertRaises(Exception, addIDToRegistration(exampleDict, "1234", "9876"))
+
 if __name__ == "__main__":
     unittest.main()
 
