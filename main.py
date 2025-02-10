@@ -32,7 +32,10 @@ def addNewRegistration(registry, registrationNumber, year):
 
 def addIDToRegistration(registry, registrationNumber, vehicleID):
 
-    registry[registrationNumber]['vehicleID'] = vehicleID
+    if registrationNumber in registry:
+        registry[registrationNumber]['vehicleID'] = vehicleID
+    else:
+        raise Exception("The registry is missing registration number " + str(registrationNumber))
 
 def countNumberOfRegistrations(registy):
 
