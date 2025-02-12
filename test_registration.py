@@ -1,6 +1,6 @@
 import unittest
 
-from main import addNewRegistration, addIDToRegistration, countNumberOfRegistrations, getVehicleID
+# from main import addNewRegistration, addIDToRegistration, countNumberOfRegistrations, getVehicleID
 from registry import Registry
 
 class TestRegistration(unittest.TestCase):

@@ -26,39 +26,39 @@
 # feature 1 then can just return the length of the dictionary
 # feature 2 then can use the registration number to find an appropriate inner 
 
-def addNewRegistration(registry, registrationNumber, year):
+# def addNewRegistration(registry, registrationNumber, year):
 
-    registry[registrationNumber] = {"year" : year}
+#     registry[registrationNumber] = {"year" : year}
 
-def addIDToRegistration(registry, registrationNumber, vehicleID):
+# def addIDToRegistration(registry, registrationNumber, vehicleID):
 
-    if registrationNumber in registry:
-        registry[registrationNumber]['vehicleID'] = vehicleID
-    else:
-        raise Exception("The registry is missing registration number " + str(registrationNumber))
+#     if registrationNumber in registry:
+#         registry[registrationNumber]['vehicleID'] = vehicleID
+#     else:
+#         raise Exception("The registry is missing registration number " + str(registrationNumber))
 
-def countNumberOfRegistrations(registy):
+# def countNumberOfRegistrations(registy):
 
-    return len(registy)
+#     return len(registy)
 
-def getVehicleID(registry, registrationNumber):
+# def getVehicleID(registry, registrationNumber):
 
-    if registrationNumber in registry:
-        return registry[registrationNumber]["vehicleID"]
-    else:
-        raise Exception("The registry is missing registration number " + str(registrationNumber))
+#     if registrationNumber in registry:
+#         return registry[registrationNumber]["vehicleID"]
+#     else:
+#         raise Exception("The registry is missing registration number " + str(registrationNumber))
 
 if __name__ == "__main__":
 
     vehicleRegistry = {}
 
-    addNewRegistration(vehicleRegistry, "AB01 CDE", "2001")
-    addIDToRegistration(vehicleRegistry, "AB01 CDE", "12345")
-    addNewRegistration(vehicleRegistry, "FG02 HJK", "2002")
-    addIDToRegistration(vehicleRegistry, "FG02 HJK", "67890")
-    addNewRegistration(vehicleRegistry, "L33T H4X0R", "2022")
+    # addNewRegistration(vehicleRegistry, "AB01 CDE", "2001")
+    # addIDToRegistration(vehicleRegistry, "AB01 CDE", "12345")
+    # addNewRegistration(vehicleRegistry, "FG02 HJK", "2002")
+    # addIDToRegistration(vehicleRegistry, "FG02 HJK", "67890")
+    # addNewRegistration(vehicleRegistry, "L33T H4X0R", "2022")
 
-    print(vehicleRegistry)
-    print(countNumberOfRegistrations(vehicleRegistry))
-    print(getVehicleID(vehicleRegistry, "AB01 CDE"))
+    # print(vehicleRegistry)
+    # print(countNumberOfRegistrations(vehicleRegistry))
+    # print(getVehicleID(vehicleRegistry, "AB01 CDE"))
     
