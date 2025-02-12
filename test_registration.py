@@ -70,7 +70,13 @@ class TestRegistration(unittest.TestCase):
 
         self.assertEqual(exampleDict, testRegistry.registry)
 
+    def testGetVehicleID(self):
 
+        testRegistry = Registry()
+        testRegistry.addNewRegistration("1234", "9876")
+        testRegistry.addIDToRegistration("1234", "ABCD")
+
+        self.assertEqual(testRegistry.getVehicleID("1234"), "ABCD")
 
 
 if __name__ == "__main__":
