@@ -58,6 +58,14 @@ class TestRegistration(unittest.TestCase):
         testRegistry = Registry()
         testRegistry.addNewRegistration("1234", "9876")
 
+    def testAddIDToRegistration(self):
+
+        exampleDict = {"1234" : {"year" : "9876", "vehicleID" : "ABCD"}}
+
+        testRegistry = Registry()
+        testRegistry.addNewRegistration("1234", "9876")
+        testRegistry.addIDToRegistration("1234", "ABCD")
+
 if __name__ == "__main__":
     unittest.main()
 
