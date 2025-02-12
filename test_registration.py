@@ -93,6 +93,11 @@ class TestRegistration(unittest.TestCase):
         
         self.assertRaises(Exception, testRegistry.addIDToRegistration, "1234", "ABCD")
 
+    def testGetIDFromMissingRegistration(self):
+
+        testRegistry = Registry()
+
+        self.assertRaises(Exception, testRegistry.countRegistrations, "1234")
 
 if __name__ == "__main__":
     unittest.main()
