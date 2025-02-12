@@ -7,10 +7,6 @@ class TestRegistration(unittest.TestCase):
     def setUp(self):
         self.testRegistry = Registry()
 
-    def testCreateRegistryObject(self):
-
-        exampleRegistry = Registry()
-
     def testAddNewRegistrationWithYear(self):
         
         exampleDict = {"1234" : {"year" : "9876"}}
