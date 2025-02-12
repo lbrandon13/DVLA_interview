@@ -1,6 +1,7 @@
 import unittest
 
 from main import addNewRegistration, addIDToRegistration, countNumberOfRegistrations, getVehicleID
+from registry import Registry
 
 class TestRegistration(unittest.TestCase):
 
@@ -45,6 +46,10 @@ class TestRegistration(unittest.TestCase):
         exampleDict = {}
 
         self.assertRaises(Exception, getVehicleID, exampleDict, "1234")
+
+    def testCreateRegistryObject(self):
+
+        exampleRegistry = Registry()
 
 if __name__ == "__main__":
     unittest.main()
