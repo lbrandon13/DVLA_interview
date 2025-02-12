@@ -58,6 +58,8 @@ class TestRegistration(unittest.TestCase):
         testRegistry = Registry()
         testRegistry.addNewRegistration("1234", "9876")
 
+        self.assertEqual(exampleDict, testRegistry.registry)
+
     def testAddIDToRegistration(self):
 
         exampleDict = {"1234" : {"year" : "9876", "vehicleID" : "ABCD"}}
@@ -65,6 +67,10 @@ class TestRegistration(unittest.TestCase):
         testRegistry = Registry()
         testRegistry.addNewRegistration("1234", "9876")
         testRegistry.addIDToRegistration("1234", "ABCD")
+
+        self.assertEqual(exampleDict, testRegistry.registry)
+
+
 
 
 if __name__ == "__main__":
