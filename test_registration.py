@@ -78,6 +78,15 @@ class TestRegistration(unittest.TestCase):
 
         self.assertEqual(testRegistry.getVehicleID("1234"), "ABCD")
 
+    def testCountRegistrations(self):
+
+        testRegistry = Registry()
+        testRegistry.addNewRegistration("12", "98")
+        testRegistry.addNewRegistration("123", "987")
+        testRegistry.addNewRegistration("1234", "9876")
+
+        self.assertEqual(testRegistry.countRegistrations())
+
 
 if __name__ == "__main__":
     unittest.main()
