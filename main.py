@@ -43,7 +43,10 @@ def countNumberOfRegistrations(registy):
 
 def getVehicleID(registry, registrationNumber):
 
-    return registry[registrationNumber]["vehicleID"]
+    if registrationNumber in registry:
+        return registry[registrationNumber]["vehicleID"]
+    else:
+        raise Exception("The registry is missing registration number " + str(registrationNumber))
 
 if __name__ == "__main__":
 
