@@ -20,3 +20,7 @@ class Registry:
     def getVehicleID(self, registrationNumber):
 
         return self.registry[registrationNumber]['vehicleID']
+    
+    def countRegistrations(self):
+
+        return len(self.registry)
