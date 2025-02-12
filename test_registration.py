@@ -85,7 +85,7 @@ class TestRegistration(unittest.TestCase):
         testRegistry.addNewRegistration("123", "987")
         testRegistry.addNewRegistration("1234", "9876")
 
-        self.assertEqual(testRegistry.countRegistrations())
+        self.assertEqual(testRegistry.countRegistrations(), 3)
 
 
 if __name__ == "__main__":
