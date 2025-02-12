@@ -60,6 +60,13 @@ class TestRegistration(unittest.TestCase):
 
         self.assertEqual(exampleDict, testRegistry.registry)
 
+    def testAddNewRegistrationWithYear(self):
+        
+        exampleDict = {"1234" : {"year" : "9876"}}
+
+        testRegistry = Registry()
+        testRegistry.addNewRegistration("1234", "9876")
+
 if __name__ == "__main__":
     unittest.main()
 
