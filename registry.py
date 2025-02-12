@@ -15,7 +15,10 @@ class Registry:
 
     def addIDToRegistration(self, registrationNumber, vehicleID):
 
-        self.registry[registrationNumber]['vehicleID'] = vehicleID
+        if registrationNumber in self.registry:
+            self.registry[registrationNumber]['vehicleID'] = vehicleID
+        else:
+            raise Exception("Registry is missing registrationNumber " + registrationNumber)
 
     def getVehicleID(self, registrationNumber):
 
