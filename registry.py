@@ -11,11 +11,13 @@ class Registry:
 
     def addNewRegistration(self, registrationNumber, year):
 
+        print("Adding new registration with registration number " + registrationNumber + " and year " + year)
         self.registry[registrationNumber] = {"year" : year}
 
     def addIDToRegistration(self, registrationNumber, vehicleID):
 
         if registrationNumber in self.registry:
+            print("Adding vehicleID " + vehicleID + " to registration number " + registrationNumber)
             self.registry[registrationNumber]['vehicleID'] = vehicleID
         else:
             raise Exception("Registry is missing registrationNumber " + registrationNumber)
@@ -23,10 +25,12 @@ class Registry:
     def getVehicleID(self, registrationNumber):
 
         if registrationNumber in self.registry:
+            print("Getting vehicleID for registration number " + registrationNumber)
             return self.registry[registrationNumber]['vehicleID']
         else:
             raise Exception("Registry is missing registrationNumber " + registrationNumber)
     
     def countRegistrations(self):
 
+        print("Counting number of registrations")
         return len(self.registry)
