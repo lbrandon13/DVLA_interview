@@ -1,3 +1,5 @@
+from registry import Registry
+
 # Coding Exercise Part 1:
 #
 # The DVLA has a system for keeping track of vehicle registration numbers, any vehicle they are associated with and the year the registration was created.
@@ -50,7 +52,7 @@
 
 if __name__ == "__main__":
 
-    vehicleRegistry = {}
+    # vehicleRegistry = {}
 
     # addNewRegistration(vehicleRegistry, "AB01 CDE", "2001")
     # addIDToRegistration(vehicleRegistry, "AB01 CDE", "12345")
@@ -61,4 +63,15 @@ if __name__ == "__main__":
     # print(vehicleRegistry)
     # print(countNumberOfRegistrations(vehicleRegistry))
     # print(getVehicleID(vehicleRegistry, "AB01 CDE"))
+
+    vehicleRegistry = Registry()
+
+    vehicleRegistry.addNewRegistration("AB01 CDE", "2001")
+    vehicleRegistry.addNewRegistration("FG02 HJK", "2002")
+    vehicleRegistry.addNewRegistration("L33T H4X0R", "2022")
+
+    vehicleRegistry.addIDToRegistration("AB01 CDE", "12345")
+    vehicleRegistry.addIDToRegistration("FG02 HJK", "67890")
+
+    print(vehicleRegistry.registry)
     
