@@ -3,3 +3,8 @@
 # initially implement a barebones registry class and then add each method, again through TDD
 # 
 # then deprecate each test for the old functions and then their appropriate code sections 
+
+class Registry:
+
+    def __init__(self):
+        pass
