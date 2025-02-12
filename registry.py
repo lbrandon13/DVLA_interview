@@ -9,6 +9,6 @@ class Registry:
     def __init__(self):
         self.registry = {}
 
-    def addNewRegistration(self, registrationNumber):
+    def addNewRegistration(self, registrationNumber, year):
 
-        self.registry[registrationNumber] = {"year" : ""}
+        self.registry[registrationNumber] = {"year" : year}
