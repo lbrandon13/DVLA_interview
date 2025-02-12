@@ -16,3 +16,7 @@ class Registry:
     def addIDToRegistration(self, registrationNumber, vehicleID):
 
         self.registry[registrationNumber]['vehicleID'] = vehicleID
+
+    def getVehicleID(self, registrationNumber):
+
+        return self.registry[registrationNumber]['vehicleID']
