@@ -22,7 +22,10 @@ class Registry:
 
     def getVehicleID(self, registrationNumber):
 
-        return self.registry[registrationNumber]['vehicleID']
+        if registrationNumber in self.registry:
+            return self.registry[registrationNumber]['vehicleID']
+        else:
+            raise Exception("Registry is missing registrationNumber " + registrationNumber)
     
     def countRegistrations(self):
 
