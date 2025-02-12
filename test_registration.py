@@ -91,7 +91,8 @@ class TestRegistration(unittest.TestCase):
 
         testRegistry = Registry()
         
-        self.assertRaises(Exception, testRegistry, "1234", "ABCD")
+        self.assertRaises(Exception, testRegistry.addIDToRegistration, "1234", "ABCD")
+
 
 if __name__ == "__main__":
     unittest.main()
