@@ -34,10 +34,16 @@ if __name__ == "__main__":
 
     vehicleRegistry.addNewRegistration("AB01 CDE", "2001")
     vehicleRegistry.addNewRegistration("FG02 HJK", "2002")
-    vehicleRegistry.addNewRegistration("L33T H4X0R", "2022")
+    vehicleRegistry.addNewRegistration("L33T H4X0R", "2022", 1000000)
+    vehicleRegistry.addNewRegistration("AG1L3", "2022", 100)
 
     vehicleRegistry.addIDToRegistration("AB01 CDE", "12345")
     vehicleRegistry.addIDToRegistration("FG02 HJK", "67890")
+    vehicleRegistry.addIDToRegistration("AG1L3", "999999")
+
+    print(vehicleRegistry.countAssignedRegistrationNumbers())
+    print(vehicleRegistry.countTotalCostOfRegistrationNumbers())
+    print(1000000 + 100)
 
     print(vehicleRegistry.registry)
     
